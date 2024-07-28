@@ -1,0 +1,21 @@
+.about-us {
+  position: relative;
+  margin-top: $margin-32;
+  .about-us-content {
+    h2 {
+      margin-block: $margin-8 $margin-24;
+    }
+    p {
+      line-height: 1.8;
+    }
+    .main-button {
+      margin-block: $margin-32;
+    }
+  }
+  .small-img {
+    @include position(absolute, $right: 50px, $bottom: -100px);
+  }
+  .side-img {
+    @include position(absolute, $right: 0, $bottom: 16px);
+  }
+}

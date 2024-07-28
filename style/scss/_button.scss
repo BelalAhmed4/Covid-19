@@ -1,0 +1,31 @@
+.main-button {
+  @include flexCenter;
+  cursor: pointer;
+  height: 3.4rem;
+  border-radius: $radius-64;
+}
+
+.primary-button {
+  background-color: $primary-color;
+  color: $white-color;
+  font-size: $font-20;
+  font-family: Mulish-Bold;
+  width: 25rem;
+  transition: 0.3s ease all;
+}
+.primary-button:hover,
+.third-button:hover {
+  opacity: 0.8;
+}
+.third-button {
+  border: 2px solid $primary-color;
+  width: 8.4rem;
+  color: $primary-color;
+  font-size: $font-18;
+}
+.secondary-button {
+  background-color: rgba($primary-color, 0.15);
+  width: 13rem;
+  color: $primary-color;
+  font-size: $font-20;
+}

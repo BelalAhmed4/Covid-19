@@ -1,0 +1,57 @@
+.protectionGuide {
+  position: relative;
+  img.greenVirus.first {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: -10;
+    opacity: 0.5;
+  }
+  img.greenVirus.second {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 30%;
+    right: 1rem;
+    z-index: -10;
+    opacity: 0.5;
+  }
+  img.pinkVirus {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 20%;
+    right: 1rem;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  .guideBox {
+    .guideTxt {
+      .guideTitle {
+        span {
+          color: #fff;
+          background-color: #fa5552a0;
+          font-weight: 600;
+          font-size: $font-24;
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          margin-right: 1.1rem;
+        }
+      }
+    }
+  }
+  @media (min-width: 769px) {
+    .guideBox:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .guideBox {
+      gap: 1.6rem;
+      flex-direction: column;
+    }
+  }
+}

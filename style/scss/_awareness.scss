@@ -1,0 +1,19 @@
+.awareness {
+  .awarenessCards {
+    align-items: stretch;
+    .awarCard {
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+      padding-block: 2rem;
+      border-radius: 0.5rem;
+      &:first-child {
+        border-bottom: 4px $primary-color solid;
+      }
+      h4 {
+        color: $green-color;
+      }
+      span {
+        color: $text-color;
+      }
+    }
+  }
+}

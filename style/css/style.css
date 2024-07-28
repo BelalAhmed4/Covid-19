@@ -1,0 +1,344 @@
+@font-face {
+  font-family: Mulish-Light;
+  src: url(../../font/Mulish/Mulish-Light.ttf);
+}
+@font-face {
+  font-family: Mulish-Bold;
+  src: url(../../font/Mulish/Mulish-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Mulish-Light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(255, 248, 248);
+}
+
+h2 {
+  font-size: 3.125rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #FA5652;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #4B4F51;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 3.4rem;
+  border-radius: 4rem;
+}
+
+.primary-button {
+  background-color: #FA5652;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Mulish-Bold;
+  width: 25rem;
+  transition: 0.3s ease all;
+}
+
+.primary-button:hover,
+.third-button:hover {
+  opacity: 0.8;
+}
+
+.third-button {
+  border: 2px solid #FA5652;
+  width: 8.4rem;
+  color: #FA5652;
+  font-size: 1.125rem;
+}
+
+.secondary-button {
+  background-color: rgba(250, 86, 82, 0.15);
+  width: 13rem;
+  color: #FA5652;
+  font-size: 1.25rem;
+}
+
+.about-us {
+  position: relative;
+  margin-top: 2rem;
+}
+.about-us .about-us-content h2 {
+  margin-block: 0.5rem 1.5rem;
+}
+.about-us .about-us-content p {
+  line-height: 1.8;
+}
+.about-us .about-us-content .main-button {
+  margin-block: 2rem;
+}
+.about-us .small-img {
+  position: absolute;
+  bottom: -100px;
+  right: 50px;
+}
+.about-us .side-img {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+}
+
+.hero {
+  position: relative;
+  padding-block: 2.8rem;
+}
+.hero .row {
+  margin-inline: auto;
+  align-items: center;
+}
+.hero .row .heroTxt a.primary-button {
+  width: 13rem;
+}
+.hero .row img {
+  top: 50%;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.awareness .awarenessCards {
+  align-items: stretch;
+}
+.awareness .awarenessCards .awarCard {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  padding-block: 2rem;
+  border-radius: 0.5rem;
+}
+.awareness .awarenessCards .awarCard:first-child {
+  border-bottom: 4px #FA5652 solid;
+}
+.awareness .awarenessCards .awarCard h4 {
+  color: #0C6C44;
+}
+.awareness .awarenessCards .awarCard span {
+  color: #4B4F51;
+}
+
+.protectionGuide {
+  position: relative;
+}
+.protectionGuide img.greenVirus.first {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: -10;
+  opacity: 0.5;
+}
+.protectionGuide img.greenVirus.second {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 30%;
+  right: 1rem;
+  z-index: -10;
+  opacity: 0.5;
+}
+.protectionGuide img.pinkVirus {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  bottom: 20%;
+  right: 1rem;
+  z-index: -10;
+  opacity: 0.5;
+}
+.protectionGuide .guideBox .guideTxt .guideTitle span {
+  color: #fff;
+  background-color: rgba(250, 85, 82, 0.6274509804);
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.1rem;
+}
+@media (min-width: 769px) {
+  .protectionGuide .guideBox:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .protectionGuide .guideBox {
+    gap: 1.6rem;
+    flex-direction: column;
+  }
+}
+
+.subscribe {
+  overflow: hidden;
+  position: relative;
+}
+.subscribe img {
+  position: absolute;
+  z-index: -10;
+}
+.subscribe img.big {
+  opacity: 0.5;
+  bottom: 0%;
+  right: -10%;
+  width: 16rem;
+  height: 16rem;
+}
+.subscribe img.small {
+  bottom: 50%;
+  right: 5%;
+  opacity: 0.8;
+  width: 11rem;
+  height: 11rem;
+}
+.subscribe .container {
+  align-items: stretch;
+}
+.subscribe .container .inputHolder {
+  background-color: #fff;
+  margin-inline: auto;
+  position: relative;
+  height: 70px;
+  max-width: 40rem;
+  padding-left: 1.1rem;
+  border-radius: 57px;
+}
+.subscribe .container .inputHolder a.sendBtn {
+  transition: 0.3s all ease;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FA5652;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .subscribe .container .inputHolder a.sendBtn {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-block: 0.9rem;
+  }
+}
+.subscribe .container .inputHolder a.sendBtn:hover {
+  opacity: 0.8;
+}
+.subscribe .container .inputHolder input {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.footer .row.mainFooterContent .logo h4 {
+  font-size: 1.3rem;
+  font-family: 900;
+  color: #035755;
+}
+.footer .row.mainFooterContent ul {
+  list-style: none;
+  margin: 0 !important;
+}
+.footer .row.mainFooterContent ul a {
+  color: #00402E;
+  font-weight: 600;
+}
+.footer .row.mainFooterContent .d-flex {
+  justify-content: center;
+}
+.footer .row.copyRights span {
+  color: #415E56;
+  font-weight: 600;
+}
+
+.repeatedTitle h2 {
+  color: #0C6C44;
+}
+.repeatedTitle span {
+  max-width: 50%;
+}
+
+.navbar {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  background: #fff8f8;
+}
+.navbar .navbar-brand span {
+  display: inline-block;
+  color: #035755;
+  font-size: 1.1875rem;
+  font-family: Mulish-Bold;
+  margin-inline-start: 0.5rem;
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .navbar-collapse .navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+  margin-inline-end: 2rem;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #FA5652;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  position: relative;
+  color: #FA5652;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: #FA5652;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav {
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .about-us .row {
+    flex-direction: column-reverse;
+  }
+}

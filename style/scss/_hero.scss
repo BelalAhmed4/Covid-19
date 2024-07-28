@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+  padding-block: 2.8rem;
+  .row {
+    margin-inline: auto;
+    align-items: center;
+    .heroTxt {
+      a.primary-button {
+        width: 13rem;
+      }
+    }
+    img {
+      top: 50%;
+      position: absolute;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

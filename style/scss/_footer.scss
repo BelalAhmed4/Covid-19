@@ -1,0 +1,28 @@
+.footer {
+  .row.mainFooterContent {
+    .logo {
+      h4 {
+        font-size: 1.3rem;
+        font-family: 900;
+        color: $seconday-color;
+      }
+    }
+    ul {
+      a {
+        color: $light-text-color;
+        font-weight: 600;
+      }
+      list-style: none;
+      margin: 0 !important;
+    }
+    .d-flex {
+      justify-content: center;
+    }
+  }
+  .row.copyRights {
+    span {
+      color: $footer-color;
+      font-weight: 600;
+    }
+  }
+}
